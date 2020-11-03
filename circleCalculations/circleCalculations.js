@@ -4,7 +4,12 @@
 
 //Bonus 2: Make both numbers whole integers (aka round to the nearest integer) 
 
-function circleCalculation () {
-	//your code here
+let radius = parseInt(prompt("Enter the radius for the circle."))
+let CircleArea = Math.PI * Math.pow(radius, 2)
+let perimeter = 2 * Math.PI * radius
 
-circleCalculation(10);
+function circleCalculation () {
+	
+	console.log("The area of the circle is " + Math.round(CircleArea) + " and the perimeter of the circle is " + Math.round(perimeter) + ".") }
+
+circleCalculation(radius);
