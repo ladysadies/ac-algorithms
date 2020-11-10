@@ -20,6 +20,16 @@
 
 
 function findLongestWord(str) {
-  //your code here
+  let parsedPhrase = str.split(' ');
+  let longestWord = 0
+  for (var i = 0; i < parsedPhrase.length; i++){
+  if (parsedPhrase[i].length > longestWord){
+    longestWord = parsedPhrase[i].length
+    
+  }
+  }console.log(longestWord)
+
 }
+
+findLongestWord("I love coding humor")
 
