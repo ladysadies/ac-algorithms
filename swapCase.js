@@ -29,6 +29,13 @@ console.log(result) // "oH, hELLO!!"
 
 **/
 
-function swapCase(str) {
-	// Your code
-}
+function swapCase(myString){
+	let newStr = myString
+	  .split("")
+	  .map(c => (c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()))
+	  .join("");
+	
+	console.log(newStr);
+	}
+	
+	swapCase("Fly Me to the Moon")
